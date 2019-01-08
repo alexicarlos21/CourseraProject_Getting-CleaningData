@@ -38,25 +38,26 @@ carrying a waist-mounted smartphone with embedded tri-axial accelerometers and t
 #### STEP 1: Merges the training and the test sets to create one data set.
 - Concatenate the Train and Test data tables by rows. Now, we only have one data set for each of the three variables
 - Set names to variables
-- Merge columns of all three variables and label as "Data"
+- Merge columns of all three variables and label as *Data*
 
 #### STEP 2: Extract only the measurements on the mean and standard deviation for each measurement. 
-- Subset name of features by measurements on the mean and standard deviation by using the **grep** command
+- Subset name of features by measurements on the mean and standard deviation by using the *grep* command
 - Subset the "Data" by selected names of features
 
 #### STEP 3: Use descriptive activity names to name the activities in the data set
-- Read **activity_labels.txt** from the unzipped file
+- Read *activity_labels.txt* from the unzipped file
 - Factorize variable "activity" to "Data" using descriptive activity names 
 
 #### STEP 4: Appropriately label the data set with descriptive activity names.
 - In the former part, variables "activity" and "subject" and names of the activities have been labelled 
 using descriptive names.
 - In this part, Names of Features will labelled using descriptive variable names.
-- Use the **gsub** function for replacement 
+- Use the *gsub* function for replacement 
 
-#### STEP 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject - labelled as tidydata.txt. 
--Create data set **Data2** using the above requirement
+#### STEP 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+- Create data set *Data2* using the above requirement
+- Create a text file labeled tidydata.txt 
 
 ### Output File
-The R script discussed above returns a clean data set labelled **tidydata.txt**
+The R script discussed above returns a clean data set labelled *tidydata.txt*
 
